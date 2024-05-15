@@ -9,9 +9,11 @@ def randomanimal():
         return random.choice(words)
 
 # Test random word
-print(randomanimal())
+# print(randomanimal())
 
-#
+# Game code
+def guess_word():
+    
 
 
 # Give player hint when requested
