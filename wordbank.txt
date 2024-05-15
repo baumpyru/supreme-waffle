@@ -27,7 +27,7 @@ monkey
 narwhal
 newt
 ocelot
-opossums
+opossum
 panda
 penguin
 quail
