@@ -11,7 +11,7 @@ def randomanimal():
 # Test random word
 print(randomanimal())
 
-#
+# why is it important to strip newline characters from the words read from the wordbank file before returning them in the random animal function?
 
 
 # Give player hint when requested
