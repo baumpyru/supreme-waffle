@@ -6,7 +6,7 @@ import random
 name = input("Enter your name:")
 
 # Tell player a quick intro to word guessing game
-print(f"Hello {name}, this game's premise is simple, guess a letter or the entire animal before you hit 25 tries.\nGetting to the lowest number wins!")
+print(f"\nHello {name}, this game's premise is simple, guess a letter or the entire animal before you hit 25 tries.\nGetting to the lowest number wins!")
 print(''' ██████   ██████   ██████  ██████      ██      ██    ██  ██████ ██   ██ ██ 
 ██       ██    ██ ██    ██ ██   ██     ██      ██    ██ ██      ██  ██  ██ 
 ██   ███ ██    ██ ██    ██ ██   ██     ██      ██    ██ ██      █████   ██ 
@@ -27,12 +27,12 @@ def guess_word():
     tries = 0
     correct_guess = False
     guessed_word = "_" * len(word)
-    print("Word to guess:", ' '.join(guessed_word))
+    print("\nWord to guess:", ' '.join(guessed_word))
     while not correct_guess and tries < 25:
         print(f"Tries left: {25 - tries}")
         guess = input("Guess a letter or the whole word:")
         if guess.lower() =="giveup":
-            print("(╯°□°）╯︵ ┻━┻\nYou've given up! The animal was", word)
+            print("\n(╯°□°）╯︵ ┻━┻\nYou've given up! The animal was", word)
             break
         tries +=1
         if guess.lower() == word.lower():
@@ -45,12 +45,13 @@ def guess_word():
             print(f"Congratulations, you guessed the word in {tries} tries")
             correct_guess = True
         elif len(guess) == 1 and guess in word:
-            print("You've correctly guessed a letter!")
             for i, char in enumerate(word):
                 if char == guess:
                     guessed_word = guessed_word[:i] + guess + guessed_word[i+1:]
-            print("Word to guess:", ' '.join(guessed_word))
+            print("\nWord to guess:", ' '.join(guessed_word))
+            print("You've correctly guessed a letter!")
         else:
+            print("\nWord to guess:", ' '.join(guessed_word))
             print("Incorrect. Guess again!")
     
     if not correct_guess and guess.lower() != "giveup":
