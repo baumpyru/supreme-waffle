@@ -4,8 +4,8 @@
 - [Description](#Description)
 - [How to play](#How-to-play)
 - [How to run](#How-to-run)
-- [License](#License)
 - [Contributions](#Contributions)
+- [License](#License)
 
 ## Description
 Small and very simple python program for a word guessing game for INST126.
