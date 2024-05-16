@@ -28,4 +28,4 @@ The word guessing game will be choose a random animal in `wordbank.txt` and ask 
 Peer programming and code review was done with [Princess Isi-Obuseh](https://github.com/prinnn4). She had helped me fix code, suggest ideas, etc.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
