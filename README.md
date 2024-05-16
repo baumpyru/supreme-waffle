@@ -1,4 +1,4 @@
-# INST126 Consolidation Project - Word Guessing Game
+# INST126 Consolidation/Final Project - Word Guessing Game
 
 ## Table of Contents
 - [Description](#Description)
