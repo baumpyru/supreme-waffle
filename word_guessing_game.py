@@ -36,7 +36,7 @@ def guess_word():
         guess = input("Guess a letter or the whole word:")
         if guess.lower() =="giveup":
             print("\n(╯°□°）╯︵ ┻━┻\nYou've given up! The animal was", word)
-            break
+            return
         tries +=1
         if guess.lower() == word.lower():
             print(''' 
@@ -66,9 +66,17 @@ def guess_word():
         writer.writerow([name, tries])
     
 # Asks if player wants to see their and other player's scores
-    show_score = input("Would you like to see scores? (y/n):")
-    if show_score.lower() == "y":
+    while True:
+        show_score = input("\nWould you like to see scores? (y/n):").lower()
+        if show_score in ['y', 'n']:
+            break
+        else:
+            print("\nInvalid input, please enter y or n")
+
+    if show_score == "y":
         plotscores.plotscores()
+    else:
+        print(f"\nThanks for playing {name}!")
 
 # Start program
 if __name__ == "__main__":
