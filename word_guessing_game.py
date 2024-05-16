@@ -1,6 +1,7 @@
 # Word Guessing Game Program by Daniel Lee (baumpyru)
 # Import modules for later use in program
 import random
+import csv
 
 # Get player information (name)
 name = input("Enter your name:")
@@ -18,8 +19,6 @@ def randomanimal():
     with open('wordbank.txt','r') as file:
         words = file.readlines()
         return random.choice(words).strip()
-# Test random word
-#print(randomanimal())
 
 # Game code
 def guess_word():
@@ -56,6 +55,11 @@ def guess_word():
     
     if not correct_guess and guess.lower() != "giveup":
         print("Out of tries! The animal was", word)
+
+# Save scores to scores.csv, newline is every entry and data layout is name, tries
+    with open('scores.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([name, tries])
 
 # Start program
 if __name__ == "__main__":
