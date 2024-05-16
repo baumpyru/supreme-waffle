@@ -18,7 +18,7 @@ The word guessing game will be choose a random animal in `wordbank.txt` and ask 
 
 ## How to run
 **Make sure you have any version of python installed before runniing!**
-1. Clone repository or Download ZIP
+1. Clone repository or [Download ZIP](https://github.com/baumpyru/supreme-waffle/archive/refs/heads/main.zip)
 2. Path to downloaded repo folder in command window
     *If you downloaded .ZIP unpack it first*
 3. Run [word_guessing_game.py](word_guessing_game.py)
