@@ -1,7 +1,11 @@
 # Word Guessing Game Program by Daniel Lee (baumpyru)
 # Import modules for later use in program
 import random
+# Used to randomly pick a word
 import csv
+# Used to write scores to scores.csv
+import plotscores
+# Add my own module to plot scores
 
 # Get player information (name)
 name = input("Enter your name:")
@@ -60,6 +64,11 @@ def guess_word():
     with open('scores.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([name, tries])
+    
+# Asks if player wants to see their and other player's scores
+    show_score = input("Would you like to see scores? (y/n):")
+    if show_score.lower() == "y":
+        plotscores.plotscores()
 
 # Start program
 if __name__ == "__main__":

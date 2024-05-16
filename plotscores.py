@@ -21,5 +21,3 @@ def plotscores():
     plt.title('Word Guessing Game Scores')
     plt.ylim(0, 25)
     plt.show()
-
-plotscores()
