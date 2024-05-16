@@ -1,4 +1,4 @@
-# Word Guessing Game Program by Daniel Lee
+# Word Guessing Game Program by Daniel Lee (baumpyru)
 # Import modules for later use in program
 import random
 
