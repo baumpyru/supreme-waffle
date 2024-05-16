@@ -6,8 +6,7 @@ The word guessing game will be choose a random animal in `wordbank.txt` and ask 
 
 ## How to play
 - Enter your name to get started
-- 
-- When stuck ask for a hint by saying `hint`
+- Keep guessing letters or animals till you are correct
 
 ## How to run
 **Make sure you have any version of python installed before runniing!**
