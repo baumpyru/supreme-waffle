@@ -67,11 +67,13 @@ def guess_word():
     
 # Asks if player wants to see their and other player's scores
     while True:
-        show_score = input("\nWould you like to see scores? (y/n):").lower()
-        if show_score in ['y', 'n']:
+        try:
+            show_score = input("\nWould you like to see scores? (y/n):").lower()
+            if show_score not in ['y', 'n']:
+                raise ValueError("\nInvalid input, please enter y or n")
             break
-        else:
-            print("\nInvalid input, please enter y or n")
+        except ValueError as e:
+            print(e)
 
     if show_score == "y":
         plotscores.plotscores()
