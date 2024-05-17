@@ -66,6 +66,7 @@ def guess_word():
         writer.writerow([name, tries])
     
 # Asks if player wants to see their and other player's scores
+def ask_show_score():
     while True:
         try:
             show_score = input("\nWould you like to see scores? (y/n):").lower()
@@ -84,3 +85,4 @@ def guess_word():
 # Start program
 if __name__ == "__main__":
     guess_word()
+    ask_show_score()
