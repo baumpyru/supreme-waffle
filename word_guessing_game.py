@@ -77,6 +77,7 @@ def guess_word():
 
     if show_score == "y":
         plotscores.plotscores()
+        print(f"\nThanks for playing {name}!")
     else:
         print(f"\nThanks for playing {name}!")
 
